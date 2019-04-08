@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox fx:controller="main.controllers.Controller" stylesheets="/css/main.css"
+      xmlns:fx="http://javafx.com/fxml" fx:id="container">
+    <Label fx:id="title" text="Polynomial Processing"/>
+    <HBox>
+        <Label text="Polynomial #1:"/>
+        <TextField fx:id="p1" promptText="Introduce the first polynomial..."/>
+    </HBox>
+    <HBox>
+        <Label text="Polynomial #2:"/>
+        <TextField fx:id="p2" promptText="Introduce the second polynomial..."/>
+    </HBox>
+    <HBox styleClass="btn-container">
+        <Button text="Addition" onAction="#handleAddition"/>
+        <Button text="Subtraction" onAction="#handleSubtraction"/>
+        <Button text="Multiplication" onAction="#handleMultiplication"/>
+    </HBox>
+    <HBox styleClass="btn-container">
+        <Button text="Division" onAction="#handleDivision"/>
+        <Button text="Derivation" onAction="#handleDerivation"/>
+        <Button text="Integration" onAction="#handleIntegration"/>
+    </HBox>
+    <HBox>
+        <Label text="Operation"/>
+        <TextField fx:id="result" promptText="Select an operation!" editable="false"/>
+    </HBox>
+    <HBox fx:id="division" visible="false">
+        <Label text="Remainder: "/>
+        <TextField fx:id="remainder" promptText="Result"  editable="false"/>
+    </HBox>
+
+</VBox>

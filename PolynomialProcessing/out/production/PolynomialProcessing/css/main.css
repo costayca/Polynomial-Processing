@@ -1,0 +1,71 @@
+* {
+    -fx-font-family: 'Varela Round';
+    -fx-alignment: center;
+    -fx-text-fill: #fff;
+}
+
+#container {
+    -fx-background: #35B55C;
+    -fx-pref-width: 500px;
+    -fx-padding: 25px;
+    -fx-spacing: 20px;
+}
+
+#title {
+    -fx-content-display: center;
+    -fx-pref-width: 530px;
+    -fx-background-color: #202428;
+    -fx-font-size: 40px;
+    -fx-line-height: 80px;
+    -fx-border-radius: 8px;
+    -fx-letter-spacing: 10px;
+}
+
+.buttons {
+    -fx-spacing: 10px;
+}
+
+.button {
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #fff;
+    -fx-background-color: none;
+    -fx-text-fill: #fff;
+    -fx-fill-width: true;
+    -fx-cursor: pointer;
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-font-size: 20px;
+    -fx-min-width: 170px;
+}
+
+.text-field {
+    -fx-pref-width: 400px;
+    -fx-border-radius: 6px;
+    -fx-border-width: 2px;
+    -fx-border-color: #fff;
+    -fx-border-style: solid;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000;
+}
+
+.label {
+    -fx-padding: 7px 20px 7px 0px;
+    -fx-font-size: 15px;
+    -fx-text-alignment: center;
+    -fx-min-width: 130px;
+    /*-fx-background-color: #202428;*/
+    /*-fx-text-fill: #fff;*/
+}
+
+.btn-container {
+    -fx-spacing: 10px;
+}
+
+#add {
+    -fx-cursor: pointer;
+}
+
+/* State based selectors */
+
+
